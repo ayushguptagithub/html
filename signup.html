@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form action="process_signup.php" method="post">
+        <!-- Text Input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="Default Text"><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <!-- Radio Buttons -->
+        <label>Choose Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Color Input -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Date Input -->
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <!-- Datetime-local Input -->
+        <label for="appointment">Appointment Date and Time:</label>
+        <input type="datetime-local" id="appointment" name="appointment"><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- File Input -->
+        <label for="avatar">Avatar (Image):</label>
+        <input type="file" id="avatar" name="avatar"><br><br>
+
+        <!-- Hidden Input -->
+        <input type="hidden" id="user_id" name="user_id" value="12345">
+
+        <!-- Image Input -->
+        <label for="profile_pic">Profile Picture (Image):</label>
+        <input type="image" id="profile_pic" name="profile_pic" src="signup profile pic.jpg" height="100" width="100" alt="Profile Picture" style="border-radius: 50px;"><br><br>
+
+        <!-- Month Input -->
+        <label for="anniversary">Anniversary Month:</label>
+        <input type="month" id="anniversary" name="anniversary"><br><br>
+
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100"><br><br>
+
+        <!-- Range Input -->
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10"><br><br>
+
+        <!-- Reset and Submit Buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br><br>
+
+        <!-- Search Input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search"><br><br>
+
+        <!-- Tel Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <!-- Time Input -->
+        <label for="meeting_time">Preferred Meeting Time:</label>
+        <input type="time" id="meeting_time" name="meeting_time"><br><br>
+
+        <!-- URL Input -->
+        <label for="website">Website URL:</label>
+        <input type="url" id="website" name="website"><br><br>
+
+        <!-- Week Input -->
+        <label for="vacation_week">Vacation Week:</label>
+        <input type="week" id="vacation_week" name="vacation_week"><br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Select Options -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select><br><br>
+
+        <!-- Select Optgroup -->
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <optgroup label="USA">
+                <option value="nyc">New York City</option>
+                <option value="la">Los Angeles</option>
+            </optgroup>
+            <optgroup label="Canada">
+                <option value="toronto">Toronto</option>
+                <option value="vancouver">Vancouver</option>
+            </optgroup>
+            <optgroup label="UK">
+                <option value="london">London</option>
+                <option value="manchester">Manchester</option>
+            </optgroup>
+        </select><br><br>
+
+    </form>
+</body>
+</html>
